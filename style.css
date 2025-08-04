@@ -1,0 +1,11 @@
+#sketchBoxContainer {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: lightpink;
+  margin: 0 500px;
+}
+#sketchBoxContainer .colorBoxes {
+  background-color: red;
+  padding: 15px 15px;
+  margin: 0.5px 0.5px;
+}
