@@ -1,11 +1,21 @@
+*,
+*::before,
+*::after {
+}
+
 #sketchBoxContainer {
   display: flex;
   flex-flow: row wrap;
   background-color: lightpink;
-  margin: 0 500px;
+  margin: 20vh auto;
+  width: 420px;
+  height: 420px;
+  /* minimum box 14 */
+  /* total 98 boxes on current box size for perfect size. so increase 14 more or less accordingly*/
 }
 #sketchBoxContainer .colorBoxes {
-  background-color: red;
-  padding: 15px 15px;
-  margin: 0.5px 0.5px;
+  flex: auto;
+  /* background-color: red; */ /* will be controlling from js for now */
+  padding: 15px;
+  /* margin: 0.5px 0; */
 }
