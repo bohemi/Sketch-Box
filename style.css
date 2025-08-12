@@ -1,21 +1,48 @@
 *,
 *::before,
 *::after {
+  box-sizing: border-box;
 }
-
+body {
+  /* background-color: black; */
+}
+h1 {
+  text-align: center;
+}
+#parents {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+#controlsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  gap: 30px;
+}
+/* the buttons class are the children of the controlContainer */
+.buttons {
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgb(204, 193, 193);
+}
 #sketchBoxContainer {
   display: flex;
   flex-flow: row wrap;
   background-color: lightpink;
-  margin: 20vh auto;
+  box-shadow: 0px 0px 10px rgb(204, 193, 193);
   width: 420px;
-  height: 420px;
-  /* minimum box 14 */
-  /* total 98 boxes on current box size for perfect size. so increase 14 more or less accordingly*/
+  height: 465px;
+  border-radius: 10px;
+  margin-right: 11vw; /* since buttons and color box have same parent and making it center is making 
+  both buttons and box centered which appears box to seem like disalign. maybe there is a better approach to center it */
 }
 #sketchBoxContainer .colorBoxes {
   flex: auto;
-  /* background-color: red; */ /* will be controlling from js for now */
+  border-radius: 5px;
   padding: 15px;
-  /* margin: 0.5px 0; */
+  margin: 0.5px 0.5px;
 }
